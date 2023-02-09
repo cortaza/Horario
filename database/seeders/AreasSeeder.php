@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Area_Tematica;
 
-class Area_TematicasSeeder extends Seeder
+class AreasSeeder extends Seeder
 {
     /**
      * Run the database seeds.

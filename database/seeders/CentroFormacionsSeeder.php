@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Centro_Formacion;
+use App\Models\CentroFormacion;
 
-class Centro_FormacionsSeeder extends Seeder
+class CentroFormacionsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class Centro_FormacionsSeeder extends Seeder
      */
     public function run()
     {
-        $Centro_formacion1=new Centro_Formacion();
+        $Centro_formacion1=new CentroFormacion();
         $Centro_formacion1->codigo_cen='313879';
         $Centro_formacion1->nr_ambientes='43';
         $Centro_formacion1->save();

@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Centro_Formacion;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([Centro_FormacionsSeeder::class]);
+        $this->call([CentroFormacionsSeeder::class]);
         $this->call([ProgramasSeeder::class]);
     }
 }

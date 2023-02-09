@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Tipo_Formacion;
 
-class Tipo_FormacionsSeeder extends Seeder
+class TipoFormacionsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
