@@ -25,8 +25,13 @@
                                         <th>{{$programa->duracion}}</th>
                                         <th>{{$programa->version}}</th>
                                         <th>{{$programa->codigo_cen}}</th>
-                                        <th><a href="" class="btn btn-info">Editar</a></th>
-                                        <th><a href="" class="btn btn-danger">Eliminar</a></th>
+                                        <th><a href="{{route('viewprogram', $programa->codigo_prog)}}" class="btn btn-info">Editar</a></th>
+                                        <th><form action="{{route('programs.destroy', $programa->codigo_prog )}}" method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="btn btn-danger">Eliminar</button>     
+                                        </form>                                        
+                                    </th>
                                     </tr>
                                     @empty
                                         <tr>

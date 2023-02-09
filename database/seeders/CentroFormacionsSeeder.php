@@ -15,9 +15,12 @@ class CentroFormacionsSeeder extends Seeder
      */
     public function run()
     {
+        /////////////////////////////////////////
+        ////////////////CIDE/////////////////////
+        /////////////////////////////////////////
         $Centro_formacion1=new CentroFormacion();
         $Centro_formacion1->codigo_cen='313879';
-        $Centro_formacion1->nr_ambientes='43';
+        $Centro_formacion1->nr_ambientes='15';
         $Centro_formacion1->save();
     }
 }

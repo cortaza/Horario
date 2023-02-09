@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Area;
+use App\Models\AreaTematica;
 
-class AreasSeeder extends Seeder
+class AreaTematicasSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,9 @@ class AreasSeeder extends Seeder
      */
     public function run()
     {
-        $Area_tematica1=new Area();
-        $Area_tematica1->codigo_area='';
+        $Area_tematica1=new AreaTematica();
         $Area_tematica1->Nombre='Software';
-        $Area_tematica1->codigo_red='';
+        $Area_tematica1->codigo_red='1';
         $Area_tematica1->save();
     }
 }

@@ -2,13 +2,14 @@
 @section('title','Edit')
 @section('content')
     <!-- Example Code -->    
-    <form class="row g-3 needs-validation" novalidate="">
+    <form action="{{route('updatevideogame')}}" method="POST" class="row g-3 needs-validation" novalidate="">
+    @csrf
       <!--///////////////////////////////
     //-----//NOMBRE//-----//
     /////////////////////////////// -->
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Codigo</font></font></label>
-        <input type="text" class="form-control" id="validationCustom01" value="Mark" required="">
+        <input type="text" class="form-control" id="validationCustom01" value="{{$programas->codigo_prog}}">
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -19,7 +20,7 @@
     /////////////////////////////// -->
       <div class="col-md-4">
         <label for="validationCustom02" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label>
-        <input type="text" class="form-control" id="validationCustom02" value="Otto" required="">
+        <input type="text" class="form-control" id="validationCustom02" value="{{$programas->nombre}}">
         <div class="valid-feedback">
             Looks good!
         </div>
@@ -29,8 +30,7 @@
  /////////////////////////////// -->
    <div class="col-md-3">
      <label for="validationCustom04" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estado</font></font></label>
-     <select class="form-select" id="validationCustom04" required="">
-       <option selected="" disabled="" value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Elegir...</font></font></option>
+     <select class="form-select" id="validationCustom04" required="" name="{{$programas->estado}}">       
        <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Activo</font></font></option>
        <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inactivo</font></font></option>
      </select>
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enviar formulario</font></font></button>
+        <button class="btn btn-primary" type="submit" value="Enviar"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enviar formulario</font></font></button>
       </div>
     </form>
     

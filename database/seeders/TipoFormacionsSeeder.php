@@ -15,9 +15,17 @@ class TipoFormacionsSeeder extends Seeder
      */
     public function run()
     {
+        /////////////////////////////////////////
+        ////////////////CADENA///////////////////
+        /////////////////////////////////////////
         $Tipo_formacion1=new TipoFormacion();
-        $Tipo_formacion1->codigo_formacion='';
-        $Tipo_formacion1->nombre='';
+        $Tipo_formacion1->nombre='cadena_formacion';
+        $Tipo_formacion1->save();
+        /////////////////////////////////////////
+        ////////////////REGULAR//////////////////
+        /////////////////////////////////////////
+        $Tipo_formacion1=new TipoFormacion();
+        $Tipo_formacion1->nombre='Oferta_regular';
         $Tipo_formacion1->save();
     }
 }

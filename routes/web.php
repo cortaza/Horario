@@ -22,3 +22,12 @@ Route::get('/', function () {return view('index');});
 Route::get('/forms/program', [FormController::class,'form'])->name('form');
 Route::get('/forms/program/edit', [FormController::class,'edit'])->name('edit');
 Route::get('/forms/program/create', [FormController::class,'create'])->name('create');
+
+/*DELETE */
+Route::delete('/delete/{deleteprogram}', [FormController::class,'destroy'])->name('programs.destroy');
+/*UPDATE*/
+Route::get('edit/{game_id}', [FormController::class,'view'])->name('viewprogram');
+Route::post('forms/updatevideogames', [FormController::class,'updatevideogame'])->name('updatevideogame');
+/*CREATE*/
+Route::get('forms/create', [FormController::class,'create'])->name('create');
+Route::post('forms/storevideogame', [FormController::class,'storevideogame'])->name('createvideogame'); 

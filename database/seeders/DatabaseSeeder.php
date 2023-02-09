@@ -17,5 +17,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([CentroFormacionsSeeder::class]);
         $this->call([ProgramasSeeder::class]);
+        $this->call([RedTematicasSeeder::class]);
+        $this->call([TipoFormacionsSeeder::class]);
+        $this->call([SubSedesSeeder::class]);
+        $this->call([AreaTematicasSeeder::class]);
+        $this->call([InstrctoresSeeder::class]);
     }
 }
