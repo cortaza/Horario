@@ -32,7 +32,7 @@ Route::get('/forms/program/create', [FormController::class,'create'])->name('cre
 /*DELETE */
 Route::delete('/delete/{deleteprogram}', [FormController::class,'destroy'])->name('programs.destroy');
 /*UPDATE*/
-Route::get('edit/{game_id}', [FormController::class,'view'])->name('viewprogram');
+Route::get('edit/{program_code}', [FormController::class,'view'])->name('viewprogram');
 Route::post('forms/updatevideogames', [FormController::class,'updatevideogame'])->name('updatevideogame');
 /*CREATE*/
 Route::get('forms/create', [FormController::class,'create'])->name('create');

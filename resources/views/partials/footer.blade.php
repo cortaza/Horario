@@ -11,7 +11,7 @@
 </head>
 <body>
     
-</body>
+
 <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">
@@ -65,18 +65,22 @@
       </div>
     </div>
 </footer>
+</body>
 <style>
+
+
+
     .site-footer
 {
-    background-color:#000000;
-  padding:45px 0 20px;
+  background-color:#2BB90C;
+  /*padding:45px 0 20px; */ 
   font-size:15px;
   line-height:24px;
   color:#737373;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:#FFFFFF;
   opacity:0.5
 }
 .site-footer hr.small
@@ -85,7 +89,7 @@
 }
 .site-footer h6
 {
-  color:#000000;
+  color:#FFFFFF;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
@@ -93,11 +97,11 @@
 }
 .site-footer a
 {
-  color:#737373;
+  color:#FFFFFF;
 }
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:#FFFFFF;
   text-decoration:none;
 }
 .footer-links
@@ -111,11 +115,11 @@
 }
 .footer-links a
 {
-  color:#737373
+  color:#FFFFFF
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:#000000 ;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -134,7 +138,7 @@
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#ffffff
+  background-color:black;
 }
 .copyright-text
 {
@@ -173,13 +177,13 @@
 {
   margin-right:15px;
   text-transform:uppercase;
-  color:#96a2b2;
+  color:#FFFFFF;
   font-weight:700;
   font-size:13px
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:#FFFFFF;
   font-size:16px;
   display:inline-block;
   line-height:44px;
@@ -194,7 +198,7 @@
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+  color:#FFFFFF;
   background-color:#29aafe
 }
 .social-icons.size-sm a

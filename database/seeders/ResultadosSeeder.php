@@ -14,6 +14,10 @@ class ResultadosSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // $resultado1=new Ficha();
+        // $resultado1->id=('');
+        // $resultado1->resultados=('');
+        // $resultado1->estado=('');
+        // $resultado1->coodigo_comp=('');
     }
 }

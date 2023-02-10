@@ -16,19 +16,22 @@ class FormController extends Controller
     }
     public function edit(){        
         $programas=Programa::all();        
-        return view('edit', ['programs'=>$programas]);
+        return view('edit', ['programas'=>$programas]);
     }
     public function destroy($deleteprogram){       
         DB::delete('DELETE FROM programas WHERE codigo_prog = ?', [$deleteprogram]);
         return redirect()->route('form');
     }
 
-    public function view($program_code){
-        $programas=Programa::find($program_code);
-        $programas=Programa::all();   
-        return view('edit', ['programs'=>$program_code]);                                
-    }
-
+    // public function view($program_code){
+    //     $programas=Programa::find($program_code);
+    //     $programas=Programa::all();   
+    //     return view('edit', ['programas'=>$program_code]);                                
+    // }
+    // public function dark(){            
+    //     return view('dark');
+    // }
+    
     public function updatevideogame($request){        
         $update =Programa::find($request->codigo_prog);        
         $update->codigo_prog=$request->codigo_prog;
@@ -47,30 +50,28 @@ class FormController extends Controller
         $programas=Programa::all();        
         return view('create', ['programas'=>$programas]);
     }
- public function storevideogame(StoreVideogame $request){
-                                /*-----SHAPE 1-----*/
-        // $request->validate([
-        //     'name_game'=>'required'
-        // ]);
-        // $game =new Videogame;
-        // $game->name=$request->name_game;
-        // $game->category_id=$request->categoria_id;
-        // $game->active=1;
-        // $game->save();
-                                /*-----SHAPE 2-----*/
-        // Videogame::create([
-        //     'name'=>$request->name,
-        //     'category_id'=>$request->category_id
-        // ]);
+//  public function storevideogame(StoreVideogame $request){
+//                                 /*-----SHAPE 1-----*/
+//         // $request->validate([
+//         //     'name_game'=>'required'
+//         // ]);
+//         // $game =new Videogame;
+//         // $game->name=$request->name_game;
+//         // $game->category_id=$request->categoria_id;
+//         // $game->active=1;
+//         // $game->save();
+//                                 /*-----SHAPE 2-----*/
+//         // Videogame::create([
+//         //     'name'=>$request->name,
+//         //     'category_id'=>$request->category_id
+//         // ]);
 
-        Videogame::create($request->all()); 
+//         Videogame::create($request->all()); 
         
-        return redirect()->route('listgames');
+//         return redirect()->route('listgames');
          
-    }
+//     }
 
     
 }
-
-
 

@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call([SubSedesSeeder::class]);
         $this->call([AreaTematicasSeeder::class]);
         $this->call([InstructoresSeeder::class]);
+        $this->call([FichasSeeder::class]);
     }
 }

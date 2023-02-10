@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id('dni');
             $table->string('nombre');
             $table->string('apellido');
-            $table->integer('telefono');
+            $table->biginteger('telefono');
             $table->string('correo');
             $table->boolean('estado');
             $table->string('tipo_contrato');
