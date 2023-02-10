@@ -1,5 +1,8 @@
 @extends('layouts.structure')
 @section('content')
+<br>
+<br>
+<br>
 <div class="col-md-8">
                             <table class="table" >
                                 <thead class="table-success table-striped" >

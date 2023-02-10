@@ -1,128 +1,217 @@
-<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-<header>
-  <div class="company-logo">#</div>
-  <nav class="navbar">
-    <ul class="nav-items">
-      <li class="nav-item"><a href="{{route('form')}}" class="nav-link">FORM</a></li>
-      <li class="nav-item"><a href="{{route('edit')}}" class="nav-link">edit</a></li>
-      <li class="nav-item"><a href="" class="nav-link">create</a></li>
-      <li class="nav-item"><a href="" class="nav-link">DELETE</a></li>        
-    </ul>
-  </nav>
-  <style>
-          @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORARIOS SENA</title>
+</head>
+<body>
+   <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div iv>
+            <ul class="menu-items">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Iniciar Sesion</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Programa</a></li>
+                <li><a href="{{route('login')}}">Login</a></li>
+            </ul>
+            <h1 class="title">HORARIOS SENA</h1>
+        </div>
+    </nav>
+</body>
+</html>
 
-          *,
-          *::before,
-          *::after {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-          }
+<style>
 
-          /* ================= VARIABLE ================ */
-          :root {
-          --primary-color: hsl(9, 94%, 61%);
-          --primary-color-alt: hsl(28, 72%, 83%);
-          --second-color: #3e537c;
-          --second-color-alt: hsla(220, 33%, 36%, 65%);
-          --third-color: hsl(220, 36%, 28%);
-          --white-color: #fbfbfb;
-          --white-color-alt: hsl(12, 14%, 93%);
-          --dark-color: hsl(300, 100%, 0%);
-          }
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
 
-          /* ================= BASE ==================== */
-          li {
-          list-style: none;
-          }
-          a {
-          text-decoration: none;
-          }
-          img {
-          width: 100%;
-          height: auto;
-          }
-          .bx {
-          font-size: 2.5rem;
-          }
-          .container {
-          padding: 0 2rem;
-          }
 
-          /* -- BODY -- */
-          body {
-          font-family: "Raleway", sans-serif;
-          font-size: 1rem;
-          background-color: var(--white-color);
-          }
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-          /* ================= HEADER ================ */
-          header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          background-color: var(--dark-color);
-          padding: 1rem 2rem;
-          }
-          .company-logo {
-          font-size: 2.5rem;
-          background: -webkit-linear-gradient(
-              120deg,
-              var(--primary-color-alt),
-              var(--primary-color)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          }
-          .nav-items {
-          display: flex;
-          }
-          .nav-item {
-          margin: 0 2rem;
-          }
-          .nav-link {
-          font-size: 1.1rem;
-          letter-spacing: 0.05rem;
-          position: relative;
-          background: -webkit-linear-gradient(
-              var(--primary-color-alt),
-              var(--primary-color)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          }
-          .nav-link::before {
-          content: "";
-          background: linear-gradient(var(--primary-color), var(--primary-color-alt));
-          width: 100%;
-          height: 0.05rem;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          transform: scaleX(0);
-          transform-origin: bottom right;
-          transition: transform 150ms;
-          }
-          .nav-link:hover::before {
-          transform: scaleX(1);
-          transform-origin: bottom left;
-          }
-          .menu-toggle {
-          display: none;
-          }
-          .bx-menu,
-          .bx-x {
-          cursor: pointer;
-          background: -webkit-linear-gradient(
-              120deg,
-              var(--primary-color-alt),
-              var(--primary-color)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          display: none !important;
-          }
+.html{
+    font-size: 62.5%;
+}
 
-  </style>
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #5c5e5c;
+    position:absolute;
+    width: 100%;
+    background: #fff;
+    color: #000000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #159e10;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+</style>

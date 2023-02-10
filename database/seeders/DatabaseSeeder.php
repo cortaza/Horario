@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call([TipoFormacionsSeeder::class]);
         $this->call([SubSedesSeeder::class]);
         $this->call([AreaTematicasSeeder::class]);
-        $this->call([InstrctoresSeeder::class]);
+        $this->call([InstructoresSeeder::class]);
     }
 }

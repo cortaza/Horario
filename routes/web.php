@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\SiginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,13 @@ use App\Http\Controllers\FormController;
 
 /*PAGINA INICIAL*/
 Route::get('/', function () {return view('index');});
-/*FORMULARIOS*/
 
+/*Login*/
+
+Route::get('/login', [SiginController::class,'login'])->name('login');
+Route::get('/signup', [SiginController::class,'signup'])->name('signup');
+
+/*FORMS*/
 Route::get('/forms/program', [FormController::class,'form'])->name('form');
 Route::get('/forms/program/edit', [FormController::class,'edit'])->name('edit');
 Route::get('/forms/program/create', [FormController::class,'create'])->name('create');

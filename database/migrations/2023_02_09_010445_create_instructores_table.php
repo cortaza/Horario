@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('instructores', function (Blueprint $table) {
             $table->id('dni');
             $table->string('nombre');
-            $table->integer('apellido');
+            $table->string('apellido');
             $table->integer('telefono');
-            $table->integer('correo');
+            $table->string('correo');
             $table->boolean('estado');
             $table->string('tipo_contrato');
             $table->unsignedBigInteger('codigo_area');
